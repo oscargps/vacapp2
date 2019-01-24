@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>SYSTEM</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="css/estilos2.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!--Funciones de los graficos en linea-->
+    <script type="text/javascript" src="js/grafico.js"></script>
+    <script type="text/javascript" src="js/grafico2.js"></script>
+    <script type="text/javascript" src="js/grafico3.js"></script>
+    <script type="text/javascript" src="js/grafico4.js"></script>
+    <script type="text/javascript" src="js/grafico5.js"></script>
+ 
+
+      
+  <script type="text/javascript" src="https://www.google.com/jsapi" > </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={
+    'modules':[{
+    'name':'visualization',
+    'version':'1',
+    'packages':['corechart']
+    }]
+    }"></script>
+
+   
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" > </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi" > </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={
+    'modules':[{
+    'name':'visualization',
+    'version':'1',
+    'packages':['corechart']
+    }]
+    }"></script> 
+</head>
+
+<body   style="background-color:#D6EAF8 ">
+
+ 
+<header>
+         <div id="encabezado">
+            <ul>
+               <li><a href="index.php ">SYSTEM</a></li>
+               <li><a href="tabla_historica1.html">TABLA HISTÓRICA</a></li>
+              <li><a href= https://www.upb.edu.co>UPB</a></li>
+            </ul>
+         </div>
+      </header>
+
+
+ <div id="container1">
+         <div style="background-color:#D6EAF8; padding-top: 30px; padding-bottom: 40px; ">
+            <img src="img/upblogomonteria.png" width="240" height="100">  
+         </div>
+ 
+</div>
+
+
+<div class="container" ><br> <!--div container-->
+
+    <div class="panel-heading"  >
+
+        <div class="row">
+        
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="panel panel-default" >
+                            <div class="panel-heading" style="color: #0000FF">
+                                <div class="row">
+
+                                    <div class="text-center">
+                                        <i class="fa fa-thermometer-full fa-5x fa-fw" aria-hidden="true"></i>
+                                    </div>
+                                  <div class="text-center">
+                                        <div class="huge"><h1><div id="numero"></div></h1></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                           <a class="nav-link js-scroll-trigger" href="#Temperatura">
+                                    <div class="panel-footer" style="background-color: #0000FF">
+                                        <span class="pull-left"><font color=white><b>Temperatura</b></font></span>
+                                        <span class="pull-right"><font color=white><i class="fa fa-arrow-circle-right"></i></font></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>  
+                        </div>
+                    </div>
+
+                    
+                   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="color: #0000FF"> <!--color figurita termometro-->
+                                <div class="row">
+                                   <div class="text-center">
+                                        <i class="fa fa-thermometer-quarter fa-5x fa-fw"></i>
+
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="huge"><h1><div id="numero2"></div></h1></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                           <a class="nav-link js-scroll-trigger" href="#Humedad">
+                                    <div class="panel-heading" style="background-color: #0000FF">
+                                        <span class="pull-left"><font color=white><b>Humedad </b></font></span>
+                                        <span class="pull-right"><font color=white><i class="fa fa-arrow-circle-right"></i></font></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>  
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="color: #0000FF">
+                                <div class="row">
+                                    <div class="text-center">
+                                        <i class="fa fa-umbrella fa-5x fa-fw" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="huge"><h1><div id="numero3"></div></h1></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                           <a class="nav-link js-scroll-trigger" href="#Precipitacion">
+                                    <div class="panel-footer" style="background-color: #0000FF">
+                                        <span class="pull-left"><font color=white><b>Precipitación </b></font></span>
+                                        <span class="pull-right"><font color=white><i class="fa fa-arrow-circle-right"></i></font></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>  
+                        </div>
+                    </div>
+
+                    <div class="col-lg- col-md-3 col-sm-6 col-xs-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="color: #0000FF" >
+                                <div class="row">
+                                    <div class="text-center">
+                                        <i class="fa fa-plane fa-5x" aria-hidden="true"></i>
+                                    </div>
+                                  <div class="text-center">
+                                        <div class="huge"><h1><div id="numero4"></div></h1></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                           <a class="nav-link js-scroll-trigger" href="#Velocidad del viento">
+                                    <div class="panel-footer" style="background-color: #0000FF">
+                                        <span class="pull-left"><font color=white><b>Velocidad viento </b></font></span>
+                                        <span class="pull-right"><font color=white><i class="fa fa-arrow-circle-right"></i></font></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>  
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+
+                <br><br><br>
+ <!--grafica 1-->   
+            <section id="Temperatura">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color: #0000FF">
+                                <h3 class="panel-title"><font color=white><b><i class="fa fa-area-chart fa-fw"></i>TEMPERATURA</b></font></h3>
+                            </div>
+                            <div class="panel-body" style="background-color:#5882FA">
+                                <!--aqui inicia la graffica -->
+                                <div id="curve_chart" style="width: 100%; height: 300px" ></div>
+
+                                    <script>    
+                                    
+                                    google.load("visualization", "1", {packages:["corechart"]});
+
+
+                                        setInterval(dibujaGrafica,1000);
+                                    </script>                                   
+                                    
+                                                                
+                                    
+                               <!-- aqui termina la grafica -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </section>
+                <br>
+<br>
+<br>
+
+
+                <!--Grafico 2-->
+                  <section id="Humedad">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color: #0000FF">
+                                <h3 class="panel-title"><font color=white><b><i class="fa fa-area-chart fa-fw"></i> HUMEDAD</b></font></h3>
+                            </div>
+                            <div class="panel-body" style="background-color:#5882FA">
+                                <!--aqui inicia la graffica -->
+                                <div id="curve_chart2" style="width: 100%; height: 300px" ></div>
+
+                                    <script> 
+
+                                        setInterval(dibujaGrafica2,1000);
+                                    </script> 
+
+                                   <!-- <div id="curve_chart7" style="width: 100%; height: 300px" ></div>
+
+                                    <script>    
+                                        setInterval(dibujaGrafica7,1000);
+                                    </script>                                   
+                                    
+
+                                aqui termina la grafica -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </section>
+                <br>
+<br>
+<br>
+
+                <!-- fin grafica 2-->
+
+
+                <!--Grafico 3-->
+                <section id="Precipitacion">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color: #0000FF">
+                                <h3 class="panel-title"><font color=white><b><i class="fa fa-area-chart fa-fw"></i> PRECIPITACIÓN</b></font></h3>
+                            </div>
+                            <div class="panel-body" style="background-color:#5882FA">
+                                <!--aqui inicia la graffica -->
+                                <div id="curve_chart3" style="width: 100%; height: 300px" ></div>
+
+                                    <script>    
+                                        setInterval(dibujaGrafica3,1000);
+                                    </script>                                   
+                                    
+                                  <!--  <div id="curve_chart8" style="width: 100%; height: 300px" ></div>
+
+                                    <script>    
+                                        setInterval(dibujaGrafica8,1000);
+                                    </script> 
+
+                                aqui termina la grafica 
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+</div>
+                </section>
+<br>
+<br>
+<br>
+                <!-- fin grafica 3-->
+
+                <!--Grafico 4-->
+                <section id="Velocidad del viento">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color: #0000FF">
+                                <h3 class="panel-title"><font color=white><b><i class="fa fa-area-chart fa-fw"></i> VELOCIDAD DEL VIENTO</b></font></h3>
+                            </div>
+                            <div class="panel-body" style="background-color: #5882FA">
+                                <!--aqui inicia la graffica -->
+                                <div id="curve_chart4" style="width: 100%; height: 300px" ></div>
+
+                                    <script>    
+                                        setInterval(dibujaGrafica4,1000);
+                                    </script> 
+                                    <!--<div id="curve_chart9" style="width: 100%; height: 300px" ></div>
+
+                                    <script>    
+                                        setInterval(dibujaGrafica9,1000);
+                                    </script> 
+                                aqui termina la grafica 
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                   </div>
+                </section>
+
+ </div>
+ </div>
+<!--</body>-->
+</html>

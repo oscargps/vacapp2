@@ -1,0 +1,5 @@
+cafe #5E5448 letras y boton
+verde #A7C645
+caqui claro #E0D2B5
+biege #F0F0E8 fondo
+azul #01708B
