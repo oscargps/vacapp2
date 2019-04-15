@@ -55,7 +55,7 @@ while(($row2 = mysqli_fetch_array($res)) && ($i<($numFilas+1)))
     $datos[$i] = array($row2['fecha'],$pes);
 	$i++;
 }
-
+echo json_encode($datos);
 }
 else
 {

@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
 	<title>Sistema de Ordeño</title>
-
+  
 </head>
 <body style="background-color:#A7C645">
  <?php

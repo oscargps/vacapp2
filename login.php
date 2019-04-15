@@ -2,6 +2,7 @@
 include("conect.php");
 $con=mysqli_connect($host, $user, $pw) or die ("error1");
 mysqli_select_db($con,$db)or die ("error2");
+//chamge the method to POST
 $user = mysqli_real_escape_string($con, $_GET['user']);
 $pw = mysqli_real_escape_string($con, $_GET['pw']);
 
